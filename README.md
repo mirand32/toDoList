@@ -3,7 +3,7 @@ To Do List built with javascript,html and css
 
 # Features
 -Create new projects
--Create new tasks
--Manage tasks by date
--Edit tasks and projects
--Organize Tasks based on priority
+/n-Create new tasks
+/n-Manage tasks by date
+/n-Edit tasks and projects
+/n-Organize Tasks based on priority
