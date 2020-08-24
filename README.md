@@ -6,4 +6,4 @@ To Do List built with javascript,html and css
 -Create new tasks\
 -Manage tasks by date\
 -Edit tasks and projects\
--Organize Tasks based on priority\
+-Organize Tasks based on priority
