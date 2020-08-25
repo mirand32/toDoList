@@ -1,0 +1,25 @@
+{
+  "name": "ToDoList",
+  "version": "1.0.0",
+  "description": "To Do List built with javascript,html and css",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirand32/ToDoList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mirand32/ToDoList/issues"
+  },
+  "homepage": "https://github.com/mirand32/ToDoList#readme",
+  "dependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
