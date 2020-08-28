@@ -13,12 +13,12 @@ const menuListDOM =()=>{
         listDOM.innerHTML=""
         toDos.projectList.forEach(project=>{
             listDOM.innerHTML+=`
-                <li>${project.name}</li>
+                <li class="project">${project.name}</li>
             `
         })
     }
     
-
+    
     const addProject=document.querySelector("#addProject")
     addProject.addEventListener("submit", _handleAddProject)
     generateProjectsListHTML()
