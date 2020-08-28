@@ -1,3 +1,12 @@
-import {toDos} from "./initToDoLists"
+import {toDos} from "./initToDoLists";
+import {menuListDOM} from "./menuListDOM"
+import { taskListDOM } from "./taskListDOM";
 
-toDos.setProjectsLocalStorage(toDos.projectList)
+function init(){
+
+    toDos.setLocalStorage(toDos.projectList)
+    menuListDOM()
+    taskListDOM()
+}
+
+init()

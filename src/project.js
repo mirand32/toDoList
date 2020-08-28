@@ -5,8 +5,9 @@ const Project = (projName, projTasks) =>{
     const addTask=(newTask)=>{tasks.unshift(newTask)}
     const getName=()=>{return name}
     const getTasks=()=>{return tasks}
+    const editName=(newName)=>{name=newName}
 
-    return {getName, getTasks, addTask, tasks, name}
+    return {getName, getTasks, addTask, tasks, name, editName}
 }
 
 export {Project};

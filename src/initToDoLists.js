@@ -44,7 +44,6 @@ const info6={
     priority:"High"
 }
 
-
 const toDos = (() => {
     let excercise = Project("Excercise", []);
     let learnUrdu = Project("Learn Urdu", []);
@@ -59,14 +58,27 @@ const toDos = (() => {
     coding.addTask(Task(info5));
     coding.addTask(Task(info6));
     
-    let projectList = [excercise, learnUrdu, coding]
     
-    const setProjectsLocalStorage = (projectList) =>{
-        projectList.forEach((project)=>{
-            localStorage.setItem(project.name, JSON.stringify(project.tasks))
-        })
-    } 
     
-    return {projectList, setProjectsLocalStorage}
+    const setLocalStorage = (projectList) =>{
+        localStorage.setItem("toDoList", JSON.stringify(projectList))
+    }
+    
+    const getProjectsLocalStorage = () =>{
+        return JSON.parse(localStorage.getItem("toDoList"))
+    }
+    
+    const addProject = (projName) =>{
+        projectList.push(Project(projName, []))
+        setLocalStorage(projectList)
+    }
+    
+    let projectList = 
+        localStorage.length > 0 
+        ? getProjectsLocalStorage() 
+        : [excercise, learnUrdu, coding]
+    
+    return {projectList, setLocalStorage, getProjectsLocalStorage, addProject}
 })()
+
 export {toDos};
